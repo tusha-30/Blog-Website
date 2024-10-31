@@ -1,6 +1,5 @@
 // app/blogs/[id]/page.jsx
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
 
 const BLOGS_API_URL = 'https://api.slingacademy.com/v1/sample-data/blog-posts';
 
@@ -23,13 +22,7 @@ export default async function BlogDetailPage({ params }) {
   return (
     <div className="p-6">
       <h1 className="text-4xl font-bold mb-4">{blog.title}</h1>
-      <Image 
-        src={blog.photo_url} // Ensure this URL is accessible and properly formatted
-        alt={blog.title} 
-        width={600} // Set your desired width
-        height={240} // Set your desired height
-        className="w-full h-60 object-cover rounded mb-4"
-      />
+      <img src={blog.photo_url} alt={blog.title} className="w-full h-60 object-cover rounded mb-4" />
       <p className="text-lg">{blog.content_text}</p>
       <span className="text-gray-500">{new Date(blog.created_at).toLocaleDateString()}</span>
     </div>
