@@ -1,3 +1,6 @@
+import React from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Banner from './components/Banner';
 import Footer from './components/Footer';
@@ -8,7 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
-        <Banner/>
+<ToastContainer/>
         <main>{children}</main>
         <Footer/>
       </body>

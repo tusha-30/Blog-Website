@@ -2,6 +2,8 @@
 import Link from 'next/link';
 import BlogCard from './BlogCard';
 import Pagination from './Pagination';
+import Banner from '../components/Banner';
+import DynamicText from '../components/DynamicText';
 const BLOGS_API_URL = 'https://api.slingacademy.com/v1/sample-data/blog-posts';
 
 async function fetchBlogs(page) {
@@ -19,8 +21,11 @@ export default async function BlogsPage({ searchParams }) {
   const totalPages = Math.ceil(totalBlogs / 12); // Calculate total pages
 
   return (
+    <>
+
+   <Banner/>
     <div className="p-6">
-      <h1 className="text-3xl font-bold mb-8">Blog Posts1</h1>
+      <h1 className="text-3xl font-bold mb-8">Blog Posts</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 cursor-pointer">
         {blogs.map((blog) => (
           <Link legacyBehavior key={blog.id} href={`/blogs/${blog.id}`}>
@@ -30,5 +35,6 @@ export default async function BlogsPage({ searchParams }) {
       </div>
       <Pagination currentPage={page} totalPages={totalPages} /> {/* Pass totalPages to Pagination */}
     </div>
+    </>
   );
 }
