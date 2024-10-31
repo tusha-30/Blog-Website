@@ -10,7 +10,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Validate fields
+  
     if (!name || !email || !message) {
       toast.error("Please fill in all fields!");
       return;
@@ -19,7 +19,7 @@ const ContactForm = () => {
     const botToken = process.env.NEXT_PUBLIC_BOT_TOKEN;
     const telegramChatID = process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID;
 
-    // Check if bot token and chat ID are available
+  
     if (!botToken || !telegramChatID) {
       toast.error("Bot token or chat ID is missing!");
       return;
@@ -28,7 +28,7 @@ const ContactForm = () => {
     const formattedMessage = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
     const encodedMessage = encodeURIComponent(formattedMessage);
 
-    // Construct Telegram API URL
+
     const telegramUrl = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${telegramChatID}&text=${encodedMessage}`;
 
     // Fetch request to send message
@@ -46,7 +46,7 @@ const ContactForm = () => {
       toast.error("Failed to send message!");
     }
 
-    // Reset form fields
+
     setName("");
     setEmail("");
     setMessage("");

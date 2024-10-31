@@ -1,11 +1,11 @@
 // app/about/page.jsx
 "use client"
-import { motion } from 'framer-motion'; // Import framer-motion for animations
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import DynamicText from '../components/DynamicText';
 
 export default function AboutPage() {
-  // Animation variants
+
   const textVariants = {
     hidden: { opacity: 0, y: -20 },
     visible: { opacity: 1, y: 0 },
@@ -17,6 +17,8 @@ export default function AboutPage() {
   };
 
   return (
+    <>
+
     <div className="p-6 max-w-4xl mx-auto">
       <motion.h1 
         className="text-4xl font-bold text-center mb-6"
@@ -64,5 +66,6 @@ export default function AboutPage() {
       </motion.p>
       <DynamicText/>
     </div>
+    </>
   );
 }

@@ -6,6 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoGithub, IoMdCall } from "react-icons/io";
 import { MdAlternateEmail } from "react-icons/md";
 import ContactForm from '../components/contactForm';
+import DynamicText from '../components/DynamicText';
 
 const personalData = {
     name: "TUSHA",
@@ -27,7 +28,9 @@ const personalData = {
 
 const Contact = () => {
     return (
-        <div id="contact" className="my-12 lg:my-16 relative mt-24 text-gray-900 bg-white">
+        <>  
+          <DynamicText/>
+        <div id="contact" className="my-12 lg:my-16 relative  text-gray-900 bg-white">
             <div className="hidden lg:flex flex-col items-center absolute top-24 -right-8">
                 <span className="bg-gray-200 w-fit text-gray-800 rotate-90 p-2 px-5 text-xl rounded-md">
                     CONTACT
@@ -95,6 +98,7 @@ const Contact = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 
