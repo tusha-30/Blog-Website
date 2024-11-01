@@ -1,4 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blog Website
+
+Welcome to the **Blog Website** project! This is a fully responsive and modern blog website built using **Next.js** and **Tailwind CSS**. The project aims to deliver a fast, user-friendly experience with a clean and elegant UI design.
+
+## Demo
+
+You can visit the live demo [here](https://tusha-blog-website.vercel.app/) (link to the deployed site if available).
+
+## Features
+
+- **Fast and Scalable**: Built using Next.js for server-side rendering and optimized performance.
+- **Responsive Design**: Fully responsive layout using Tailwind CSS to ensure seamless experience across devices.
+- **SEO Friendly**: Pre-rendered pages help with search engine optimization.
+- **Dynamic Content**: Easy content management and blog post creation.
+
+
+## Tech Stack
+
+- **Next.js**: React framework for production-grade applications with server-side rendering.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **JavaScript**: The project can be configured to use TypeScript if needed.
+
 
 ## Getting Started
 
