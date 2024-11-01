@@ -20,9 +20,12 @@ You can visit the live demo [here](https://tusha-blog-website.vercel.app/)
 - **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
 - **JavaScript**: The project can be configured to use TypeScript if needed.
 
+## Screenshots
+<img width="1470" alt="Screenshot 2024-11-01 at 6 0218 PM" src="https://github.com/user-attachments/assets/d9344462-7f1e-458d-9619-b4614f67618b">
+ <img width="1470" alt="Screenshot 2024-11-01 at 6 03 08 PM" src="https://github.com/user-attachments/assets/4bb00990-08e8-4a8b-bf94-f02fc4a994cb">
+
 
 ## Getting Started
-
 First, run the development server:
 
 ```bash
