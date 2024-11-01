@@ -4,7 +4,7 @@ Welcome to the **Blog Website** project! This is a fully responsive and modern b
 
 ## Demo
 
-You can visit the live demo [here](https://tusha-blog-website.vercel.app/) (link to the deployed site if available).
+You can visit the live demo [here](https://tusha-blog-website.vercel.app/) 
 
 ## Features
 
