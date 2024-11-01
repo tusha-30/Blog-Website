@@ -9,7 +9,7 @@ import "./globals.css"
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className='bg-white'>
         <Header />
 <ToastContainer/>
         <main>{children}</main>
